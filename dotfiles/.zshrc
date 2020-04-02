@@ -1,5 +1,4 @@
 export PATH="$HOME/bin:$PATH"
-export DOTFILES=$HOME/dotfiles
 
 # Use Japanese
 export LANG=ja_JP.UTF-8
@@ -83,8 +82,8 @@ alias zmv='noglob zmv -W'
 PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})%n${reset_color} at ${fg[blue]}%m${reset_color} in ${fg[green]}%~${reset_color} ${vcs_info_msg_0_}
 %# "
 
-source $DOTFILES/.zshrc.alias
-source $DOTFILES/.zshrc.git
+source .zshrc.alias
+source .zshrc.git
 
 # direnv
 eval "$(direnv hook zsh)"
