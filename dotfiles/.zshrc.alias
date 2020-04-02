@@ -1,0 +1,27 @@
+# Global alias
+alias -g L='| less'
+alias -g H='| head'
+alias -g G='| grep'
+alias -g GI='| grep -ri'
+
+# alias
+alias l='ls -ltrG'
+alias la='ls -laG'
+alias ll='ls -lG'
+alias so='source'
+alias v='vim'
+alias vi='vim'
+alias vz='vim ~/.zshrc'
+alias c='cdr'
+alias dc='docker-compose'
+alias dm='docker-machine'
+alias g='git'
+
+alias h='fc -lt '%F %T' 1'
+alias cp='cp -i'
+alias rm='rm -i'
+alias mkdir='mkdir -p'
+alias ..='c ../'
+alias back='pushd'
+alias diff='diff -U1'
+alias .z='source ~/.zshrc'
