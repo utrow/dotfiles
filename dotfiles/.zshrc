@@ -22,7 +22,6 @@ bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 bindkey "^[[3~" delete-char
 stty erase "^?"
-stty erase ^H
 setopt no_flow_control
 
 # History
@@ -82,8 +81,8 @@ alias zmv='noglob zmv -W'
 PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})%n${reset_color} at ${fg[blue]}%m${reset_color} in ${fg[green]}%~${reset_color} ${vcs_info_msg_0_}
 %# "
 
-source .zshrc.alias
-source .zshrc.git
+source ~/dotfiles/dotfiles/.zshrc.alias
+source ~/dotfiles/dotfiles/.zshrc.git
 
 # direnv
 eval "$(direnv hook zsh)"
