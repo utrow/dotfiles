@@ -16,6 +16,7 @@ alias c='cdr'
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias g='git'
+alias master='g checkout . && g clean -df && g checkout master && g pull'
 
 alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
