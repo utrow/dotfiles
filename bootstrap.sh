@@ -3,6 +3,9 @@
 DOTFILES_DIR="dotfiles"
 DOTFILES=$(find $DOTFILES_DIR -type f)
 
+# make basic .zshrc
+cp dotfiles/example.zshrc dotfiles/.zshrc
+
 function check_file_exists() {
     for file in $DOTFILES; do
         local home_file="$HOME/$(basename $file)"

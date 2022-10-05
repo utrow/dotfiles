@@ -6,7 +6,7 @@
 
 1. Run script
     ```
-    bash init.sh
+    bash bootstrap.sh
     ```
 
 
