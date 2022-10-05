@@ -1,10 +1,10 @@
 #!/bin/bash
 
-DOTFILES_DIR="dotfiles"
-DOTFILES=$(find $DOTFILES_DIR -type f)
-
 # make basic .zshrc
 cp dotfiles/example.zshrc dotfiles/.zshrc
+
+DOTFILES_DIR="dotfiles"
+DOTFILES=$(find $DOTFILES_DIR -type f)
 
 function check_file_exists() {
     for file in $DOTFILES; do
