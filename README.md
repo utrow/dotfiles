@@ -1,6 +1,6 @@
 # dotfiles
 
-## Import this dotfiles
+## 🚀 Import this dotfiles
 
 1. Clone repository
 
@@ -10,7 +10,7 @@
     ```
 
 
-## Manual Installations
+## 🛠 Manual Installations
 
 ### Applications
 
@@ -27,10 +27,6 @@
 - Source Han Mono
 
 
-## TODO
-
-- Generate SSH key
-    - https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ### Mac Preference
 
@@ -38,8 +34,42 @@
   1. Open Apple menu | System Preferences | Keyboard | Shortcuts | Services
   1. Disable Search man Page Index in Terminal (or change the shortcut)
 
+### Git Configure
 
-## Unlinks
+- Generate SSH key
+    - https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+#### Normal
+
+```
+git config --global user.name "Yutaro Ohbuchi"
+git config --global user.email "example.com"
+```
+
+#### Separating work account
+
+`~/.gitconfig`
+```
+[user]
+        name = Yutaro Ohbuchi
+        email = example.com
+
+[includeIf "gitdir:~/Projects/work/"]
+        path = ~/.work.gitconfig
+[core]
+        autocrlf = input
+[init]
+        defaultBranch = main
+```
+
+`~/.work.gitconfig`
+```
+[user]
+        name = Yutaro Ohbuchi
+        email = work@example.com
+```
+
+## 🗑 Unlinks
 
 ```
 rm ~/.zshrc* ~/example.zshrc
