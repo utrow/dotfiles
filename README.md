@@ -37,3 +37,10 @@
 - Disable/change the key binding for the Search man Page Index in Terminal feature:
   1. Open Apple menu | System Preferences | Keyboard | Shortcuts | Services
   1. Disable Search man Page Index in Terminal (or change the shortcut)
+
+
+## Unlinks
+
+```
+rm ~/.zshrc* ~/example.zshrc
+```
