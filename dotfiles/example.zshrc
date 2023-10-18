@@ -1,5 +1,5 @@
-source ~/dotfiles/dotfiles/.zshrc.base
-source ~/dotfiles/dotfiles/.zshrc.alias
-source ~/dotfiles/dotfiles/.zshrc.git
+source ~/.zshrc.base
+source ~/.zshrc.alias
+source ~/.zshrc.git
 
 # -------------------------------------
