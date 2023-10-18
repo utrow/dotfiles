@@ -40,7 +40,7 @@
 #### Normal
 
 ```
-git config --global user.name "Yutaro Ohbuchi"
+git config --global user.name "Yutaro Obuchi"
 git config --global user.email "example.com"
 ```
 
@@ -49,7 +49,7 @@ git config --global user.email "example.com"
 `~/.gitconfig`
 ```
 [user]
-        name = Yutaro Ohbuchi
+        name = Yutaro Obuchi
         email = example.com
 
 [includeIf "gitdir:~/Projects/work/"]
@@ -63,7 +63,7 @@ git config --global user.email "example.com"
 `~/.work.gitconfig`
 ```
 [user]
-        name = Yutaro Ohbuchi
+        name = Yutaro Obuchi
         email = work@example.com
 ```
 
