@@ -17,7 +17,6 @@
 ```shell
 brew install git
 brew install gh
-brew install asdf
 brew install docker
 brew install xcodesorg/made/xcodes
 brew install --cask warp
@@ -30,6 +29,21 @@ brew install --cask rancher
 - Karabiner
 - Raycat
 
+### Tool version manager
+
+```shell
+brew install asdf
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+```
+```shell
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
+asdf plugin-add flutter
+```
+```shell
+echo '\nlegacy_version_file = yes' >> $HOME/.asdfrc
+```
 
 ### Font
 
