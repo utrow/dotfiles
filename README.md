@@ -17,16 +17,14 @@
 - Chrome
 - Homebrew
 - Karabiner
-- iTerm
-    - import profile and color scheme from ./iterm2
+- Raycat
+- Warp
 - VSCode
 - Docker
 
 ### Font
 
 - Source Han Mono
-
-
 
 ### Mac Preference
 
