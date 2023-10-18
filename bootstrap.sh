@@ -7,13 +7,20 @@ DOTFILES_DIR="dotfiles"
 DOTFILES=$(find $DOTFILES_DIR -type f)
 
 function check_file_exists() {
+    local has_error=false
     for file in $DOTFILES; do
-        local home_file="$HOME/$(basename $file)"
-        if [ -f  $home_file ]; then
+        local home_file="$HOME/$(basename $file)"    
+        if [ -f  $home_file ]
+        then
             echo "Error: $home_file is already exist."
-            exit 1
+            has_error=true
         fi
     done
+
+    if [ $has_error ]
+    then
+        exit 1
+    fi
 }
 
 function make_symbolic_links() {
