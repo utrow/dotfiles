@@ -14,19 +14,34 @@
 
 ### Applications
 
+```shell
+brew install git
+brew install gh
+brew install asdf
+brew install docker
+brew install xcodesorg/made/xcodes
+brew install --cask warp
+brew install --cask visual-studio-code
+brew install --cask rancher
+```
+
 - Chrome
 - Homebrew
 - Karabiner
 - Raycat
-- Warp
-- VSCode
-- Docker
+
 
 ### Font
 
 - Source Han Mono
 
 ### Mac Preference
+
+Remove all dock icons
+```shell
+defaults write com.apple.dock persistent-apps -array
+killall Dock
+```
 
 - Disable/change the key binding for the Search man Page Index in Terminal feature:
   1. Open Apple menu | System Preferences | Keyboard | Shortcuts | Services
