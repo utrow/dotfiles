@@ -23,6 +23,7 @@ brew install xcodesorg/made/xcodes
 brew install --cask warp
 brew install --cask visual-studio-code
 brew install --cask rancher
+brew install --cask raycast
 ```
 
 - Chrome
