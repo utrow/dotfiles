@@ -17,6 +17,7 @@
 ```shell
 brew install git
 brew install gh
+brew install mise
 brew install docker
 brew install xcodesorg/made/xcodes
 brew install --cask warp
@@ -31,18 +32,9 @@ brew install --cask rancher
 
 ### Tool version manager
 
+Mise
 ```shell
-brew install asdf
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
-```
-```shell
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
-asdf plugin-add flutter
-```
-```shell
-echo '\nlegacy_version_file = yes' >> $HOME/.asdfrc
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 ```
 
 ### Font
